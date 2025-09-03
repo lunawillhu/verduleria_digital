@@ -1,0 +1,11 @@
+.span{
+    padding: 34px;
+    margin: 23px;
+    
+}
+
+span:hover{
+    padding: 56px;
+    margin: 45px;
+    color: blue;
+}
