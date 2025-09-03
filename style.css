@@ -8,4 +8,11 @@ span:hover{
     padding: 56px;
     margin: 45px;
     color: blue;
+
+}
+.producto{
+    border-radius: 100%;
+}
+.sprite{
+    border-radius: 57%;
 }
