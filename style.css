@@ -39,6 +39,20 @@ body{
     }
 }
 
+@layer principal{
+    main{
+        display: grid;
+        align-items: center ;
+        justify-content: space-around;
+    }
+}
+
+@layer productos{
+    .productos,button{
+        
+    }
+}
+
 @layer promo{
     aside{
         display: grid;
