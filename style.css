@@ -10,8 +10,10 @@ span:hover{
     color: blue;
 
 }
-.producto{
-    border-radius: 100%;
+section [type="producto"] img{
+    height: 200px;
+    width: 20px;
+    border-radius: 8px;
 }
 .sprite{
     border-radius: 57%;
