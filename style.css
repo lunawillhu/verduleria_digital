@@ -41,9 +41,6 @@ body{
 
 @layer principal{
     main{
-        display: grid;
-        align-items: center ;
-        justify-content: space-around;
     }
 }
 
