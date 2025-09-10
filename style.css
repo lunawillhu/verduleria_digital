@@ -28,6 +28,35 @@
         height: 50px;
     }
 }
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.menu {
+  background: #eee;
+  padding: 10px;
+}
+
+.menu nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.enlaces a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: #333;
+}
+
+.titulo {
+  text-align: center;
+  margin: 20px 0;
+}
+
+
 .span{
     padding: 34px;
     margin: 23px;
