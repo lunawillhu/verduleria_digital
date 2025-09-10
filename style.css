@@ -1,3 +1,33 @@
+@layer menu{
+    nav{
+    background-color: #164c22;
+    padding: 10px;
+    margin: 10px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: aliceblue;
+    border-radius: 15px;
+    border: 2px solid #11391a;
+    box-shadow: 5px 5px 10px #000000;
+    }
+
+    nav a{
+        color: white;
+        margin: 0 10px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    img.logo{
+        margin: 5px;
+        margin-left: 15px;
+        border-radius: 20px;
+        width: 50px;
+        height: 50px;
+    }
+}
 .span{
     padding: 34px;
     margin: 23px;
