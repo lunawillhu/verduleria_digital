@@ -55,6 +55,12 @@ body{
         grid-column: span 2 / span 2;
         grid-row: span 3 / span 3;
         grid-row-start: 2;
+        position: relative;
+        z-index: auto;
+        margin: 5px;
+        justify-content: left;
+        padding: 2px;
+        border: solid 2px;
     }
 
     .promo {
@@ -68,3 +74,4 @@ body{
         grid-row-start: 5;
     }
 }
+
