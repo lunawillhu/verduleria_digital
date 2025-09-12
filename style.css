@@ -82,7 +82,14 @@ section [type="producto"] img{
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
     gap: 8px;
+    
 }
+.parent img {
+  width: 150px;
+  height: 200px;
+  object-fit: contain;
+}
+
     
 .div1 {
     grid-column: span 5 / span 5;
