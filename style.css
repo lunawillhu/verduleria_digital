@@ -118,15 +118,19 @@ section [type="producto"] img{
   box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 .producto img {
+
   width: 100%;
-  max-width: 150px;
-  height: 200px;
+  max-width: 140px;
+  height: 180px;
   object-fit: contain;
+  margin-bottom: 10px;
 }
-
-
-
-    
+.producto span {
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+}    
 .div1 {
     grid-column: span 5 / span 5;
 }
