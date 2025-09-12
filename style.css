@@ -86,10 +86,10 @@ section [type="producto"] img{
 .parent {
   
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 columnas iguales */
-  gap: 20px; /* Espacio entre los productos */
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 20px;
   padding: 40px;
-  justify-items: center; /* Centra cada item dentro de su celda */
+  justify-items: center; 
 
 
 }
@@ -105,10 +105,17 @@ section [type="producto"] img{
 }
 
 .producto {
-  background-color: #f3f3f3;
-  padding: 10px;
+  
+  background-color: #ffffff;
+  padding: 20px;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.producto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 .producto img {
   width: 100%;
