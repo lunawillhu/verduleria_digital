@@ -78,17 +78,40 @@ section [type="producto"] img{
 
 
 .parent {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    gap: 8px;
-    
+  
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columnas iguales */
+  gap: 20px; /* Espacio entre los productos */
+  padding: 40px;
+  justify-items: center; /* Centra cada item dentro de su celda */
+
+
 }
 .parent img {
-  width: 150px;
+ 
+  width: 100%;
+  max-width: 150px;
+  height: 200px;
+  object-fit: contain;
+  display: block;
+
+
+}
+
+.producto {
+  background-color: #f3f3f3;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+}
+.producto img {
+  width: 100%;
+  max-width: 150px;
   height: 200px;
   object-fit: contain;
 }
+
+
 
     
 .div1 {
