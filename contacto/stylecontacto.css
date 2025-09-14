@@ -1,0 +1,17 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 1%;
+}
+
+div.contenido{
+    justify-content: space-between;
+    align-items: center;
+}
+div.contacto{
+    border: 1px solid;
+    box-shadow:  gray;
+    margin: 1%;
+    padding: 0.5%;
+    justify-content: center;
+    border-radius: 5px;
+}
