@@ -1,3 +1,7 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 @layer menu{
     nav{
         background-color: #164c22;
