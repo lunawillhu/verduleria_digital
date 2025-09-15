@@ -58,3 +58,7 @@
     grid-row: span 2 / span 2;
     grid-row-start: 2;
 }
+.div7, .div8, .div9, .div10, .div11 {
+    grid-row: span 2 / span 2;
+    grid-row-start: 4;
+}
