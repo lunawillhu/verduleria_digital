@@ -1,6 +1,7 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     padding: 1px;
+    background-color: #e3ffee;
 }
 
 @layer menu{
@@ -42,6 +43,10 @@ body{
         grid-template-rows: repeat(5, 1fr);
         gap: 8px;
     }
+
+    .contenido img{
+        border: rgb(175, 175, 175) 2px;
+    }
         
     .novedades {
         grid-column: span 4 / span 4;
@@ -49,18 +54,44 @@ body{
     }
 
     .promo {
-        grid-row: span 5 / span 5;
+        grid-row: span 4 / span 4;
         grid-column-start: 5;
         padding: 15px 5px 15px 15px;
     }
 
     .productos {
         grid-column: span 4 / span 4;
-        grid-row: span 4 / span 4;
+        grid-row: span 3 / span 3;
         grid-row-start: 2;
         position: relative;
         padding: 5px 10px 10px 50px;
     }
-            
+
+    .novedades img,.promo img{
+        border-radius: 10px;
+        box-shadow: 0 4px 10px #1110104d;
+        transition: transform 0.3s;
+    }
+
+    .novedades img:hover,.promo img:hover{
+        transform: scale(1.01);
+    }
+
+    .productos img{
+        border-radius: 10px;
+        box-shadow: 0 4px 10px #00000026;
+        transition: transform 0.3s;
+    }
+
+    .productos img:hover{
+        transform: scale(1.02);
+    }
+    
+    footer{
+        grid-column: span 5 / span 5;
+        grid-row-start: 5;
+        background-color: #164c22;
+        padding: 0;
+    }
 }
 
