@@ -36,5 +36,31 @@ body{
 
 @layer principal{
     
+    .contenido {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        gap: 8px;
+    }
+        
+    .novedades {
+        grid-column: span 4 / span 4;
+        padding: 15px 10px 10px 20px;
+    }
+
+    .promo {
+        grid-row: span 5 / span 5;
+        grid-column-start: 5;
+        padding: 15px 5px 15px 15px;
+    }
+
+    .productos {
+        grid-column: span 4 / span 4;
+        grid-row: span 4 / span 4;
+        grid-row-start: 2;
+        position: relative;
+        padding: 5px 10px 10px 50px;
+    }
+            
 }
 
