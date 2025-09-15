@@ -1,6 +1,7 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
-    padding: 1px;
+    padding: 0%;
+    margin: 0%;
     background-color: #e3ffee;
 }
 
@@ -9,7 +10,6 @@ body{
         background-color: #164c22;
         padding: 10px;
         margin: 10px;
-        margin-top: 5px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -64,7 +64,7 @@ body{
         grid-row: span 3 / span 3;
         grid-row-start: 2;
         position: relative;
-        padding: 5px 10px 10px 50px;
+        padding: 5px 10px 10px 60px;
     }
 
     .novedades img,.promo img{
@@ -91,7 +91,13 @@ body{
         grid-column: span 5 / span 5;
         grid-row-start: 5;
         background-color: #164c22;
-        padding: 0;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin-top: 20px;
+        border-top: 2px solid #11391a;
     }
+
+
 }
 
