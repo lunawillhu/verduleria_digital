@@ -1,4 +1,7 @@
-/* ===== MENÚ ===== */
+ body{
+    background-color: #c4ffd1;
+
+ } 
 @layer menu {
     nav {
         background-color: #164c22;
