@@ -197,4 +197,32 @@ button {
     grid-row-start: 3;
 }
         
+.form-agregar {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
 
+.input-cantidad {
+  width: 50px;
+  padding: 5px;
+  font-size: 14px;
+  border-radius: 7px;
+}
+
+.form-agregar button {
+  padding: 5px 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  box-shadow: 5px 5px 5px #00000065;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.form-agregar button:hover {
+  background-color: #218838;
+}
