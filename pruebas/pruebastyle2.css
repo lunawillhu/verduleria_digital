@@ -1,0 +1,136 @@
+/* ===== RESET & BASE ===== */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+/* ===== MENÚ ===== */
+nav {
+    background-color: #164c22;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    border-radius: 15px;
+    border: 2px solid #11391a;
+    box-shadow: 5px 5px 10px #000000;
+    margin: 10px;
+}
+
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+img.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+}
+
+/* ===== PAGE GRID ===== */
+.page-grid {
+    display: grid;
+    grid-template-columns: 3fr 1fr; /* Contenido + aside */
+    gap: 10px;
+    padding: 10px;
+}
+
+/* Contenido principal */
+.contenido {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Novedades */
+.novedades img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Carrusel */
+.productos-carrusel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.carrusel-wrapper {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.carrusel-wrapper .producto {
+    width: 100%;
+    flex-shrink: 0;
+    display: inline-block;
+}
+
+.carrusel-wrapper img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.carrusel-wrapper img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+}
+
+/* Botones carrusel */
+button.prev,
+button.next {
+    background-color: #164c22;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+    transition: background-color 0.2s;
+}
+
+button.prev:hover,
+button.next:hover {
+    background-color: #11391a;
+}
+
+/* Aside lateral (PROMOS) */
+.promo-aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+}
+
+.promo-aside img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* Footer */
+footer {
+    background-color: #164c22;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    border-top: 2px solid #11391a;
+}
