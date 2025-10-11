@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body{
     font-family: Arial, Helvetica, sans-serif;
     padding: 0%;
@@ -10,6 +11,18 @@ body{
         background-color: #164c22;
         padding: 10px;
         margin: 10px;
+=======
+ body{
+    background-color: #e0f4e4;
+
+ } 
+@layer menu {
+    nav {
+        background-color: #164c22;
+        padding: 10px;
+        margin: 10px;
+        margin-top: 5px;
+>>>>>>> main3
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -17,16 +30,24 @@ body{
         border-radius: 15px;
         border: 2px solid #11391a;
         box-shadow: 5px 5px 10px #000000;
+<<<<<<< HEAD
         height: 55px;
     }
 
     nav a{
         color: #e4ffd8;
+=======
+    }
+
+    nav a {
+        color: white;
+>>>>>>> main3
         margin: 0 10px;
         text-decoration: none;
         font-weight: bold;
     }
 
+<<<<<<< HEAD
     img.logo{
         position: relative;
         margin: 5px;
@@ -100,5 +121,76 @@ body{
         margin-top: 20px;
         border-top: 2px solid #11391a;
     }
+=======
+    img.logo {
+        margin: 5px;
+        margin-left: 15px;
+        border-radius: 20px;
+        width: 50px;
+        height: 50px;
+    }
+}
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 8px;
+    margin: 20px;
+}
+.parent > div {
+    background-color: #f1f1f1;
+    text-align: center;
+    border-radius: 10px;
+    
+}
+.div1 {
+    grid-column: span 5 / span 5;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #164c22;
+    color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #11391a;
+}
+.div2, .div3, .div4, .div5, .div6 {
+    grid-row: span 2 / span 2;
+    grid-row-start: 2;
+}
+.div7, .div8, .div9, .div10, .div11 {
+    grid-row: span 2 / span 2;
+    grid-row-start: 4;
+}
+button {
+    border: none;
+    background-color: white;
+    border-radius: 12px;
+    padding: 8px;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.3);
+}
+
+button img {
+    max-width: 100%;
+    max-height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+.titulo{
+    padding-left: 30%;
+>>>>>>> main3
 }
 
