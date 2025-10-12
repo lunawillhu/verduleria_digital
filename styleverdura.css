@@ -41,7 +41,6 @@ body{
 @layer principal{
     
   .contenido {
-    margin: 20px;
     display: grid;
     /* grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr); */
@@ -68,6 +67,13 @@ body{
   .div4 {
     grid-column: span 5 / span 5;
     grid-row-start: 5;
+    margin: 0;
+    background-color: #164c22;
+    color: #e4ffd8;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    border-top: 2px solid #11391a;    
   }
 
   .div1 h3{
@@ -83,7 +89,7 @@ body{
   }
 
   .div1 h3:hover{
-    transform:scale(1.02) ;
+    transform:scale(1.01) ;
   }
 
   .div3 img{
