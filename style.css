@@ -1,5 +1,8 @@
 body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #f2ece4;
+    margin: 0;
+    padding: 0;
 }
 
 @layer menu{
@@ -7,7 +10,6 @@ body{
         background-color: #164c22;
         padding: 10px;
         margin: 10px;
-        margin-top: 5px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -15,20 +17,23 @@ body{
         border-radius: 15px;
         border: 2px solid #11391a;
         box-shadow: 5px 5px 10px #000000;
+        height: 55px;
     }
     nav a{
-        color: white;
+        color: #e4ffd8;
         margin: 0 10px;
         text-decoration:none;
         font-weight: bold;
 
     }
     img.logo{
+      position: relative;
         margin: 5px;
         margin-left: 15px;
+        margin-top: 5px;
         border-radius: 20px;
-        width: 50px;
-        height: 50px;
+        width: 80px;
+        height: 80px;
     }
 }
 
@@ -37,7 +42,6 @@ body{
 .contenido {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
     gap: 8px;
 }
     
@@ -60,17 +64,26 @@ body{
 .div4 {
     grid-column: span 5 / span 5;
     grid-row-start: 5;
+    margin: 0;
+    background-color: #164c22;
+    color: #e4ffd8;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px ;
+    border-top: 2px solid #11391a;
 }
         
 }
 
 @layer catalogo{
-    .catalogo {
+
+.catalogo {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 20px;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 10px;
+  margin-left: 30px;
 }
 
 .producto {
@@ -115,6 +128,7 @@ body{
   width: 50px;
   padding: 5px;
   font-size: 14px;
+ 
 }
 
 .form-agregar button {
@@ -123,7 +137,8 @@ body{
   color: white;
   border: none;
   border-radius: 4px;
-  cursor: pointer;
+  box-shadow: 5px 5px 5px #00000065;
+  cursor: pointer;''
   font-size: 14px;
 }
 
@@ -132,4 +147,28 @@ body{
 }
 
 
+}
+
+@layer titulo {
+    .div1 h1{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      background-color: #5cb46fd0;
+      border-radius: 25px;
+      box-shadow: 5px 5px 10px #3a5a2593;
+      margin: 0;
+      font-size: 30px;
+      color: #11391a;
+      font-weight: bold;
+    }
+}
+
+@layer consejo {
+  .div3 img{
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 5px 5px 10px #000000s;
+  }
 }
