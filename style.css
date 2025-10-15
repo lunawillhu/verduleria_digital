@@ -27,6 +27,7 @@
         width: 50px;
         height: 50px;
     }
+    
 }
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -225,4 +226,12 @@ button {
 
 .form-agregar button:hover {
   background-color: #218838;
+}
+button {
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: white;
+  transform: scale(1.1);
 }
