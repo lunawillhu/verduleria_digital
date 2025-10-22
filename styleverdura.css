@@ -1,6 +1,5 @@
 body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-<<<<<<< HEAD
     background-color: #f2ece4;
     margin: 0;
     padding: 0;
@@ -37,43 +36,10 @@ body{
     width: 80px;
     height: 80px;
   }
-=======
-}
-
-@layer menu{
-    nav{
-        background-color: #164c22;
-        padding: 10px;
-        margin: 10px;
-        margin-top: 5px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        color: aliceblue;
-        border-radius: 15px;
-        border: 2px solid #11391a;
-        box-shadow: 5px 5px 10px #000000;
-    }
-    nav a{
-        color: white;
-        margin: 0 10px;
-        text-decoration:none;
-        font-weight: bold;
-
-    }
-    img.logo{
-        margin: 5px;
-        margin-left: 15px;
-        border-radius: 20px;
-        width: 50px;
-        height: 50px;
-    }
->>>>>>> 323b348f37042c0142072acff531036991008f89
 }
 
 @layer principal{
     
-<<<<<<< HEAD
   .contenido {
     display: grid;
     /* grid-template-columns: repeat(5, 1fr);
@@ -137,36 +103,6 @@ body{
   .div3 img:hover{
     transform:scale(1.02) ;
   }
-=======
-.contenido {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    gap: 8px;
-}
-    
-.div1 {
-    grid-column: span 5 / span 5;
-}
-
-.div2 {
-    grid-column: span 4 / span 4;
-    grid-row: span 3 / span 3;
-    grid-row-start: 2;
-}
-
-.div3 {
-    grid-row: span 3 / span 3;
-    grid-column-start: 5;
-    grid-row-start: 2;
-}
-
-.div4 {
-    grid-column: span 5 / span 5;
-    grid-row-start: 5;
-}
-        
->>>>>>> 323b348f37042c0142072acff531036991008f89
 }
 
 @layer catalogo{
@@ -175,12 +111,8 @@ body{
   grid-template-columns: repeat(5, 1fr);
   gap: 20px;
   max-width: 1200px;
-<<<<<<< HEAD
   margin: 10px;
   margin-left: 30px;
-=======
-  margin: 0 auto;
->>>>>>> 323b348f37042c0142072acff531036991008f89
 }
 
 .producto {
