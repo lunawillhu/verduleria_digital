@@ -41,33 +41,51 @@
                     <img src="imagenes/promos.png" alt="promos">
                 </a>
             </div>
-            
-            <!--Acá quiero agregar una división para hacer los botones a modo "carrusel" con js, pero cuando
-            agrego el div y meto los productos ahi, se me desconfigura el style, en la siguiente entrega corrijo eso al
-            igual que las imagenes de los productos-->
-            
+
             <div class="productos">
-                <a href="verdura.html">
-                    <img src="imagenes/verduras.png" alt="verduras">
+                <button class="flecha izquierda">⟨</button>
+
+                <a id="linkProducto" href="verdura.html">
+                    <img id="imagenProducto" src="imagenes/verduras.png" alt="verduras">
                 </a>
+
+                <button class="flecha derecha">⟩</button>
             </div>
             
-            <!-- <div class="productos">
-                <a href="frutas.html">
-                    <img src="imagenes/frutas.png" alt="frutas">
-                </a>
-            </div>
-            
-            <div class="productos">
-                <a href="indexbebidas.html">
-                    <img src="imagenes/bebidas.png  " alt="bebidas">
-                </a>
-            </div> -->
             <footer>
                 <p>© 2025 Verdulería Digital</p>
             </footer>
         </div>
     </main>
-    
+    <script>
+      const imagenes = [
+        { src: "imagenes/verduras.png", alt: "verduras", link: "verdura.html" },
+        { src: "imagenes/frutas.png", alt: "frutas", link: "frutas.html" },
+        { src: "imagenes/bebidas.png", alt: "bebidas", link: "indexbebidas.html" }
+      ];
+
+      let indice = 0;
+
+      const imagen = document.getElementById("imagenProducto");
+      const link = document.getElementById("linkProducto");
+      const flechaIzq = document.querySelector(".flecha.izquierda");
+      const flechaDer = document.querySelector(".flecha.derecha");
+
+      function mostrarImagen(index) {
+        imagen.src = imagenes[index].src;
+        imagen.alt = imagenes[index].alt;
+        link.href = imagenes[index].link;
+      }
+
+      flechaIzq.addEventListener("click", () => {
+        indice = (indice - 1 + imagenes.length) % imagenes.length;
+        mostrarImagen(indice);
+      });
+
+      flechaDer.addEventListener("click", () => {
+        indice = (indice + 1) % imagenes.length;
+        mostrarImagen(indice);
+      });
+    </script>
 </body>
 </html>
