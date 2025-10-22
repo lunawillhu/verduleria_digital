@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylebebidas.css">
-    <title>Bedidas</title>
-    <script src="JS/script.js"></script>
+    <title>Bebidas</title>
+
 </head>
 <body>
   <header>
@@ -28,178 +28,267 @@
 
     <section class="titulo">
         <div class="subtitulo">
-        
             <h1>Bienvenido a la sección Bebidas</h1>
-          
-            
         </div>
-        
     </section>
+
     <section class="parent">
-    <div class="producto">
-        <button>
-            
-            <img src="imagenes verduleria/cocacola.jpg" alt="coca-cola-desechable-15lt"><br>
-            <span>
-                ver mas... 
-            </span>
-            
-        </button>
-        <p>2500$</p>
-        <form class="form-agregar" >
-            <input type="number" name="cantidad" min="0" value="0" class="input-cantidad" required>
-            <button onclick="left()" type="submit">Agregar</button>
-        </form>
-        
-    </div>
-    <div class="producto">
-        <button>
-            <img src="imagenes verduleria/sprite.jpg" alt="Gaseosa-Sprite-Lima-Lim-n-2-25lts-Gaseosa-Sprite-Lima-lim-n-2-25-Lt" ><br>
-            <span href="sprite2.html" class="arriba">
-                Ver mas...
-            </span>
-           
-        </button>
-        <p>2500$</p>
-        <form class="form-agregar" >
-            <input type="number" name="cantidad" min="0" value="0" class="input-cantidad" required>
-            <button type="submit">Agregar</button>
-        </form>
-    </div>
-    <div class="producto">
-        <button>
-            <img src="imagenes verduleria/fanta.jpg" alt="gaseosa sprite"><br>
-            <span href="fanta.html" class="arriba">
 
-                ver mas... 
-            </span>
-        </button>
-        <p>2500$</p>
-        <form class="form-agregar" >
-            <input type="number" name="cantidad" min="0" value="0" class="input-cantidad" required>
-            <button onclick="left()" type="submit">Agregar</button>
-        </form>
+  <div class="producto">
+    <a href="#modal-1">
+      <img src="imagenes verduleria/cocacola.jpg" alt="coca-cola-desechable-1.5lt"><br>
+      <span>ver más...</span>
+    </a>
+    <p>2500$</p>
+    <form class="form-agregar">
+      <input type="number" name="cantidad" min="0" value="0" class="input-cantidad" required>
+      <button type="submit">Agregar</button>
+    </form>
+    <div id="modal-1" class="modalmask">
+      <div class="modalbox movedown">
+        <a href="#close" title="Close" class="close">X</a>
+        <h2>Coca-Cola 500 ml</h2>
+        <p>Ingredientes principales:
+            Agua carbonatada 
+            Azúcar o jarabe de maíz de alta fructosa
+            Colorante: E-150d (caramelo) 
+            Acidulante: Ácido fosfórico 
+            Cafeína 
+        </p>
+      </div>
+    </div>
+  </div>
 
+  <div class="producto">
+    <a href="#modal-2">
+      <img src="imagenes verduleria/sprite.jpg" alt="Gaseosa-Sprite-Lima-Limón-2.25lts"><br>
+      <span>ver más...</span>
+    </a>
+    <p>2500$</p>
+    <form class="form-agregar">
+      <input type="number" name="cantidad" min="0" value="0" class="input-cantidad" required>
+      <button type="submit">Agregar</button>
+    </form>
+    <div id="modal-2" class="modalmask">
+      <div class="modalbox movedown">
+        <a href="#close" title="Close" class="close">X</a>
+        <h2>Sprite 2.25 L</h2>
+        <p>ingredientes clave
+            Agua carbonatada
+            Azúcar/Jarabe de maíz alto en fructosa
+            Ácido cítrico 
+            Saborizantes naturales 
+            Citrato de sodio 
+            Benzoato de sodio</p>
+      </div>
     </div>
-    <div class="producto">
-        <button>
-            <a href="mirinda.html">
-            <img src="imagenes verduleria/mirinda.jpg" alt="gaseosa mirinda"><br>
-            <span class="arriba">
-                ver más...
-            </span>
-            </a>
-        </button>
-        <p>2500$</p>
-        <form class="form-agregar" >
-            <input type="number" name="cantidad" min="0" value="0" class="input-cantidad" required>
-            <button onclick="left()" type="submit">Agregar</button>
-        </form>
+  </div>
+
+  <div class="producto">
+    <a href="#modal-3">
+      <img src="imagenes verduleria/fanta.jpg" alt="gaseosa fanta"><br>
+      <span>ver más...</span>
+    </a>
+    <p>2500$</p>
+    <form class="form-agregar">
+      <input type="number" name="cantidad" min="0" value="0" class="input-cantidad" required>
+      <button type="submit">Agregar</button>
+    </form>
+    <div id="modal-3" class="modalmask">
+      <div class="modalbox movedown">
+        <a href="#close" title="Close" class="close">X</a>
+        <h2>Fanta</h2>
+        <p>Descripción o detalles del producto Fanta.</p>
+      </div>
     </div>
-    <div class="producto">
-        <button>
-            <img src="imagenes verduleria/pepsi.jpg" alt="gaseosa pepsi"><br>
-            <span href="pepsi.html" class="arriba">
-                ver más...
-            </span>
-            
-        </button>
-        <p>2500$</p>
-        <form class="form-agregar" >
-            <input type="number" name="cantidad" min="0" value="0" class="input-cantidad" required>
-            <button onclick="left()" type="submit">Agregar</button>
-        </form>
+  </div>
+
+  <div class="producto">
+    <a href="#modal-4">
+      <img src="imagenes verduleria/mirinda.jpg" alt="gaseosa mirinda"><br>
+      <span>ver más...</span>
+    </a>
+    <p>2500$</p>
+    <form class="form-agregar">
+      <input type="number" name="cantidad" min="0" value="0" class="input-cantidad" required>
+      <button type="submit">Agregar</button>
+    </form>
+    <div id="modal-4" class="modalmask">
+      <div class="modalbox movedown">
+        <a href="#close" title="Close" class="close">X</a>
+        <h2>Mirinda</h2>
+        <p>Descripción o detalles del producto Mirinda.</p>
+      </div>
     </div>
-    <div class="producto">
-        <button>
-            <img src="imagenes verduleria/sevenup.jpg" alt="gaseosa 7up"><br>
-            <span href="sevenup.html" class="arriba">
-                ver más...
-            </span>
-            
-        </button>
-        <p>2500$</p>
-        <form class="form-agregar" >
-            <input type="number" name="cantidad" min="0" value="0" class="input-cantidad" required>
-            <button onclick="left()" type="submit">Agregar</button>
-        </form>
+  </div>
+
+  <div class="producto">
+    <a href="#modal-5">
+      <img src="imagenes verduleria/pepsi.jpg" alt="gaseosa pepsi"><br>
+      <span>ver más...</span>
+    </a>
+    <p>2500$</p>
+    <form class="form-agregar">
+      <input type="number" name="cantidad" min="0" value="0" class="input-cantidad" required>
+      <button type="submit">Agregar</button>
+    </form>
+    <div id="modal-5" class="modalmask">
+      <div class="modalbox movedown">
+        <a href="#close" title="Close" class="close">X</a>
+        <h2>Pepsi</h2>
+        <p>Descripción o detalles del producto Pepsi.</p>
+      </div>
     </div>
-    <div class="producto">
-        <button>
-            <img src="imagenes verduleria/manaosuva.jpg" alt="manaos de uva"><br>
-            <span href="imagenes verduleria/manaosuva.jpg" class="arriba">
-                ver más... 
-            </span>
-            
-        </button>
-        <p>2500$</p>
-        <form class="form-agregar" >
-            <input type="number" name="cantidad" min="0" value="0" class="input-cantidad" required>
-            <button onclick="left()" type="submit">Agregar</button>
-        </form>
+  </div>
+
+  
+  <div class="producto">
+    <a href="#modal-6">
+      <img src="imagenes verduleria/sevenup.jpg" alt="gaseosa 7up"><br>
+      <span>ver más...</span>
+    </a>
+    <p>2500$</p>
+    <form class="form-agregar">
+      <input type="number" name="cantidad" min="0" value="0" class="input-cantidad" required>
+      <button type="submit">Agregar</button>
+    </form>
+    <div id="modal-6" class="modalmask">
+      <div class="modalbox movedown">
+        <a href="#close" title="Close" class="close">X</a>
+        <h2>7UP</h2>
+        <p>Descripción o detalles del producto 7UP.</p>
+      </div>
     </div>
-    <div class="producto">
-        <button>
-            <img src="imagenes verduleria/cepitafrutillamango.jpg" alt="cepita frutilla mango"><br>
-            <span href="cepfr.html" class="arriba">
-                ver más... 
-            </span>
-            
-        </button>
-        <p>2500$</p>
-        <form class="form-agregar" >
-            <input type="number" name="cantidad" min="0" value="0" class="input-cantidad" required>
-            <button onclick="left()" type="submit">Agregar</button>
-        </form>
+  </div>
+
+  
+  <div class="producto">
+    <a href="#modal-7">
+      <img src="imagenes verduleria/manaosuva.jpg" alt="manaos de uva"><br>
+      <span>ver más...</span>
+    </a>
+    <p>2500$</p>
+    <form class="form-agregar">
+      <input type="number" name="cantidad" min="0" value="0" class="input-cantidad" required>
+      <button type="submit">Agregar</button>
+    </form>
+    <div id="modal-7" class="modalmask">
+      <div class="modalbox movedown">
+        <a href="#close" title="Close" class="close">X</a>
+        <h2>Manaos Uva</h2>
+        <p>Descripción o detalles del producto Manaos Uva.</p>
+      </div>
     </div>
-    <div class="producto">
-        <button>
-            <img src="imagenes verduleria/cepita naranja.jpg" alt="cepita naranja"><br>
-            <span href="cepnaranja.html" class="arriba">
-                ver más...
-            </span>
-            
-        </button>
-        <p>2500$</p>
-        <form class="form-agregar" >
-            <input type="number" name="cantidad" min="0" value="0" class="input-cantidad" required>
-            <button onclick="left()" type="submit">Agregar</button>
-        </form>
+  </div>
+
+  
+  <div class="producto">
+    <a href="#modal-8">
+      <img src="imagenes verduleria/cepitafrutillamango.jpg" alt="cepita frutilla mango"><br>
+      <span>ver más...</span>
+    </a>
+    <p>2500$</p>
+    <form class="form-agregar">
+      <input type="number" name="cantidad" min="0" value="0" class="input-cantidad" required>
+      <button type="submit">Agregar</button>
+    </form>
+    <div id="modal-8" class="modalmask">
+      <div class="modalbox movedown">
+        <a href="#close" title="Close" class="close">X</a>
+        <h2>Cepita Frutilla-Mango</h2>
+        <p>Descripción o detalles del producto Cepita Frutilla-Mango.</p>
+      </div>
     </div>
-    <div class="producto">
-        <button>
-            <img src="imagenes verduleria/cepitamultifruta.jpg" alt="cepita multifruta"><br>
-            <span href="cepmulti.html" class="arriba">
-                ver más...
-            </span>
-            
-        </button>
-        <p>2500$</p>
-        <form class="form-agregar" >
-            <input type="number" name="cantidad" min="0" value="0" class="input-cantidad" required>
-            <button onclick="left()" type="submit">Agregar</button>
-        </form>
+  </div>
+
+  
+  <div class="producto">
+    <a href="#modal-9">
+      <img src="imagenes verduleria/cepita naranja.jpg" alt="cepita naranja"><br>
+      <span>ver más...</span>
+    </a>
+    <p>2500$</p>
+    <form class="form-agregar">
+      <input type="number" name="cantidad" min="0" value="0" class="input-cantidad" required>
+      <button type="submit">Agregar</button>
+    </form>
+    <div id="modal-9" class="modalmask">
+      <div class="modalbox movedown">
+        <a href="#close" title="Close" class="close">X</a>
+        <h2>Cepita Naranja</h2>
+        <p>Descripción o detalles del producto Cepita Naranja.</p>
+      </div>
     </div>
-    <div class="producto">
-        <button>
-            <img src="imagenes verduleria/cepmanzanaroja.jpg" alt="cepita manzana"><br>
-            <span href="cepdur.html" class="arriba">
-                ver más...  
-            </span>
-            
-        </button>
-        <p>2500$</p>
-        <form class="form-agregar" >
-            <input type="number" name="cantidad" min="0" value="0" class="input-cantidad" required>
-            <button onclick="left()" type="submit">Agregar</button>
-        </form>
+  </div>
+
+
+  <div class="producto">
+    <a href="#modal-10">
+      <img src="imagenes verduleria/cepitamultifruta.jpg" alt="cepita multifruta"><br>
+      <span>ver más...</span>
+    </a>
+    <p>2500$</p>
+    <form class="form-agregar">
+      <input type="number" name="cantidad" min="0" value="0" class="input-cantidad" required>
+      <button type="submit">Agregar</button>
+    </form>
+    <div id="modal-10" class="modalmask">
+      <div class="modalbox movedown">
+        <a href="#close" title="Close" class="close">X</a>
+        <h2>Cepita Multifruta</h2>
+        <p>Descripción o detalles del producto Cepita Multifruta.</p>
+      </div>
     </div>
-    </section>
+  </div>
+
+  <!-- Producto 11 -->
+  <div class="producto">
+    <a href="#modal-11">
+      <img src="imagenes verduleria/cepmanzanaroja.jpg" alt="cepita manzana roja"><br>
+      <span>ver más…</span>
+    </a>
+    <p>2500$</p>
+    <form class="form-agregar">
+      <input type="number" name="cantidad" min="0" value="0" class="input-cantidad" required>
+      <button type="submit">Agregar</button>
+    </form>
+    <div id="modal-11" class="modalmask">
+      <div class="modalbox movedown">
+        <a href="#close" title="Close" class="close">X</a>
+        <h2>Cepita Manzana Roja</h2>
+        <p>Descripción o detalles del producto Cepita Manzana Roja.</p>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
     <script>
-        onclick = "left()"; {
-            alert("Producto agregado al carrito");
-        }
-    </script>
-</body>
+      
+      document.querySelectorAll(".form-agregar").forEach(form => {
+        form.addEventListener("submit", function(event) {
+          event.preventDefault(); 
+          const input = this.querySelector(".input-cantidad");
+          const cantidad = parseInt(input.value, 10);
+          const limite = 10;
 
+          if (isNaN(cantidad) || cantidad < 0) {
+            alert("Por favor ingresá un número válido.");
+            return;
+          }
+
+          if (cantidad > limite) {
+            alert(`Solo puedes agregar hasta ${limite} bebidas por producto.`);
+            input.value = limite;
+            return;
+          }
+
+          alert("Producto agregado al carrito");
+          
+        });
+      });
+    </script>
+
+</body>
 </html>
