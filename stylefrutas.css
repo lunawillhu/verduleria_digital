@@ -1,10 +1,7 @@
-<<<<<<< HEAD
 body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: #e0f4e4;
  } 
-=======
->>>>>>> d88ada4f768b950ca886205536315748936b5248
 @layer menu {
     nav{
         background-color: #164c22;
@@ -27,16 +24,11 @@ body{
         font-weight: bold;
     }
 
-<<<<<<< HEAD
     img.logo{
-=======
-    header .logo{
->>>>>>> d88ada4f768b950ca886205536315748936b5248
         position: relative;
         margin: 5px;
         margin-left: 15px;
         padding-top:5px ;
-<<<<<<< HEAD
         border-radius: 20px;
         width: 80px;
         height: 80px;
@@ -104,70 +96,5 @@ button img {
 .titulo{
     padding-left: 30%;
 }
-=======
-        border-radius: 100px;
-        width: 60px;
-        height: 60px;
-    }
-}
-.parent {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(5, auto);
-  gap: 5px;
-  justify-items: center;
-  padding: 20px;
-}
-
-/* === ESTILO DE LOS BOTONES === */
-button {
-  background-color: #f9f9f9;
-  border: 2px solid #ccc;
-  border-radius: 12px;
-  padding: 10px;        /* antes 20px */
-  cursor: pointer;
-  width: 220px;         /* antes 300px */
-  text-align: center;
-  transition: 0.3s;
-}
-
-button:hover {
-  background-color: #ffe0b2;
-  transform: scale(1.05);
-}
-
-img {
-  width: 160px;         
-  height: 160px;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-/* === POSICIÓN DE CADA ELEMENTO EN LA GRILLA === */
-.div1 {
-  grid-column: span 5;
-}
-
-/* Fila 1 (segunda en grid, porque la primera sería la .div1 si existiera) */
-.div2, .div3, .div4, .div5, .div6 {
-  grid-row-start: 2;
-}
-
-/* Fila 2 */
-.div7, .div8, .div9, .div10, .div11 {
-  grid-row-start: 3;
-}
-
-/* Fila 3 */
-.div12, .div13, .div14, .div15, .div16 {
-  grid-row-start: 4;
-}
-
-/* Fila 4 */
-.div17, .div18, .div19 {
-  grid-row-start: 5;
-}
 
 
-
->>>>>>> d88ada4f768b950ca886205536315748936b5248
