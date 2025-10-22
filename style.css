@@ -156,21 +156,6 @@ body {
   }
 }
 
-/* === CARRUSEL DE PRODUCTOS === */
-.productos {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.productos img {
-  width: 250px;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px #00000026;
-  transition: transform 0.3s;
-}
 
 .flecha {
   background-color: #164c22;
@@ -187,56 +172,27 @@ body {
   transition: opacity 0.3s, transform 0.2s;
 }
 
-.flecha:hover {
-  opacity: 1;
-  transform: translateY(-50%) scale(1.1);
-}
-
-.flecha.izquierda {
-  left: 10px;
-}
-
-.flecha.derecha {
-  right: 10px;
-}
-
-/* === Ajustes de tamaño del carrusel === */
-.productos {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
-}
-
-.productos img {
-  width: 80%; /* hace la imagen mucho más grande */
-  max-width: 700px; /* evita que se pase de tamaño en pantallas grandes */
-  height: auto;
-  border-radius: 15px;
-  box-shadow: 0 4px 10px #00000033;
-  transition: transform 0.3s;
-}
-
-.productos img:hover {
-  transform: scale(1.02);
-}
-
-/* flechas del carrusel */
 .flecha {
   background-color: #164c22;
   color: #e4ffd8;
   border: none;
-  font-size: 2.2rem;
-  padding: 10px 14px;
+  font-size: 1.5rem;
+  width: 55px;
+  height: 55px;
   border-radius: 50%;
   cursor: pointer;
   position: absolute;
-  top: 50%;
   transform: translateY(-50%);
   opacity: 0.8;
   transition: opacity 0.3s, transform 0.2s;
+  z-index: 10;
 }
+
+.productos a {
+  position: relative;
+  z-index: 1;
+}
+
 
 .flecha:hover {
   opacity: 1;
@@ -244,7 +200,7 @@ body {
 }
 
 .flecha.izquierda {
-  left: 2%;
+  left: 3%;
 }
 
 .flecha.derecha {
