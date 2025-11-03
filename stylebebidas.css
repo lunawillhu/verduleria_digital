@@ -1,5 +1,5 @@
-@layer menu{
-  nav{
+@layer menu {
+  nav {
     background-color: #164c22;
     padding: 10px;
     margin: 10px;
@@ -13,23 +13,25 @@
     height: 55px;
   }
 
-  nav a{
+  nav a {
     color: #e4ffd8;
     margin: 0 10px;
     text-decoration: none;
     font-weight: bold;
   }
 
-  img.logo{
+  img.logo {
     position: relative;
     margin: 5px;
     margin-left: 15px;
-    padding-top:5px ;
+    padding-top: 5px;
     border-radius: 20px;
     width: 80px;
     height: 80px;
   }
 }
+
+
 body {
     font-family: Arial, Helvetica, sans-serif;
   background-color: #11391a;
@@ -102,7 +104,7 @@ section [type="producto"] img{
 }
 
 .producto {
-  
+  width: 250px;
   background-color: #ffffff;
   padding: 20px;
   text-align: center;
@@ -115,7 +117,7 @@ section [type="producto"] img{
   box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 .producto img {
-
+  margin-left: 50px;
   width: 100%;
   max-width: 140px;
   height: 180px;
@@ -222,4 +224,125 @@ button {
 
 .form-agregar button:hover {
   background-color: #218838;
+}
+button {
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: white;
+  transform: scale(1.1);
+}
+
+.modalmask {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 400ms ease-in;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.modalmask:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+.modalbox {
+    background: #fff;
+    border-radius: 3px;
+    padding: 20px;
+    width: 400px;
+    max-width: 90%;
+    position: relative;
+    transition: all 500ms ease-in;
+    box-sizing: border-box;
+}
+
+
+.movedown {
+    margin-top: -100px; 
+    transform: translateY(-100px);
+    opacity: 0;
+}
+.modalmask:target .movedown {
+    transform: translateY(0);
+    opacity: 1;
+    margin-top: 0;
+}
+
+.rotate {
+    transform: scale(0) rotate(0deg);
+    opacity: 0;
+}
+.modalmask:target .rotate {
+    transform: scale(1) rotate(360deg);
+    opacity: 1;
+}
+
+.resize {
+    width: 0;
+    height: 0;
+    padding: 0;
+    opacity: 0;
+}
+.modalmask:target .resize {
+    width: 400px;
+    height: auto;
+    padding: 20px;
+    opacity: 1;
+}
+
+
+.close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 24px;
+    height: 24px;
+    background: #606061;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    line-height: 24px;
+    font-weight: bold;
+    border-radius: 3px;
+    transition: background 0.3s, color 0.3s;
+}
+.close:hover {
+    background: #FAAC58;
+    color: #222;
+}
+
+
+.producto a {
+    text-decoration: none;
+    color: inherit;
+}
+.producto span {
+    display: block;
+    margin-top: 8px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #333;
+}
+
+
+@media (max-width: 480px) {
+    .modalbox {
+        width: 90%;
+        padding: 15px;
+    }
+    .resize {
+        width: 90%;
+    }
 }

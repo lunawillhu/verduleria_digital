@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylebebidas.css">
-    <title>Bedidas</title>
+    <title>Bebidas</title>
 
 </head>
 <body>
-   <header>
+  <header>
         <div class="menu">
             <nav>
                 <div>
@@ -25,171 +25,287 @@
             </nav>
         </div>
     </header>
+
     <section class="titulo">
         <div class="subtitulo">
-            <h1>Bebidas</h1>
+            <h1>Bienvenido a la sección Bebidas</h1>
         </div>
-        
     </section>
+
     <section class="parent">
-    <div class="producto">
-        <button>
-            
-            <img src="imagenes bebidas/cocacola.jpg" alt="coca-cola-desechable-15lt"><br>
-            <span>
-                ver mas... 
-            </span>
-            
-        </button>
-        <p>2500$</p>
-        <form class="form-agregar" >
-            <input type="number" name="cantidad" min="0" value="0" class="input-cantidad" required>
-            <button type="submit">Agregar</button>
-        </form>
-        
-    </div>
-    <div class="producto">
-        <button>
-            <img src="imagenes bebidas/sprite.jpg" alt="Gaseosa-Sprite-Lima-Lim-n-2-25lts-Gaseosa-Sprite-Lima-lim-n-2-25-Lt" ><br>
-            <span href="bebidasindex/sprite.html" class="arriba">
-                Ver mas...
-            </span>
-           
-        </button>
-        <p>2500$</p>
-        <form class="form-agregar" >
-            <input type="number" name="cantidad" min="0" value="0" class="input-cantidad" required>
-            <button type="submit">Agregar</button>
-        </form>
-    </div>
-    <div class="producto">
-        <button>
-            <img src="imagenes bebidas/fanta.jpg" alt="gaseosa sprite"><br>
-            <span href="bebidasindex/fanta.html" class="arriba">
 
-                ver mas... 
-            </span>
-        </button>
-        <p>2500$</p>
-        <form class="form-agregar" >
-            <input type="number" name="cantidad" min="0" value="0" class="input-cantidad" required>
-            <button type="submit">Agregar</button>
-        </form>
+  <div class="producto">
+    <a href="#modal-1">
+      <img src="imagenes bebidas/cocacola.jpg" alt="coca-cola-desechable-1.5lt"><br>
+      <span>ver más...</span>
+    </a>
+    <p>2500$</p>
+    <form class="form-agregar">
+      <input type="number" name="cantidad" min="0" value="0" class="input-cantidad" required>
+      <button type="submit">Agregar</button>
+    </form>
+    <div id="modal-1" class="modalmask">
+      <div class="modalbox movedown">
+        <a href="#close" title="Close" class="close">X</a>
+        <h2>Coca-Cola 500 ml</h2>
+        <p>Ingredientes principales:
+            Agua carbonatada 
+            Azúcar o jarabe de maíz de alta fructosa
+            Colorante: E-150d (caramelo) 
+            Acidulante: Ácido fosfórico 
+            Cafeína 
+        </p>
+      </div>
+    </div>
+  </div>
 
+  <div class="producto">
+    <a href="#modal-2">
+      <img src="imagenes bebidas/sprite.jpg" alt="Gaseosa-Sprite-Lima-Limón-2.25lts"><br>
+      <span>ver más...</span>
+    </a>
+    <p>2500$</p>
+    <form class="form-agregar">
+      <input type="number" name="cantidad" min="0" value="0" class="input-cantidad" required>
+      <button type="submit">Agregar</button>
+    </form>
+    <div id="modal-2" class="modalmask">
+      <div class="modalbox movedown">
+        <a href="#close" title="Close" class="close">X</a>
+        <h2>Sprite 2.25 L</h2>
+        <p>ingredientes clave
+            Agua carbonatada
+            Azúcar/Jarabe de maíz alto en fructosa
+            Ácido cítrico 
+            Saborizantes naturales 
+            Citrato de sodio 
+            </p>
+      </div>
     </div>
-    <div class="producto">
-        <button>
-            <a href="mirinda.html">
-            <img src="imagenes bebidas/mirinda.jpg" alt="gaseosa mirinda"><br>
-            <span class="arriba">
-                ver más...
-            </span>
-            </a>
-        </button>
-        <p>2500$</p>
-        <form class="form-agregar" >
-            <input type="number" name="cantidad" min="0" value="0" class="input-cantidad" required>
-            <button type="submit">Agregar</button>
-        </form>
+  </div>
+
+  <div class="producto">
+    <a href="#modal-3">
+      <img src="imagenes bebidas/fanta.jpg" alt="gaseosa fanta"><br>
+      <span>ver más...</span>
+    </a>
+    <p>2500$</p>
+    <form class="form-agregar">
+      <input type="number" name="cantidad" min="0" value="0" class="input-cantidad" required>
+      <button type="submit">Agregar</button>
+    </form>
+    <div id="modal-3" class="modalmask">
+      <div class="modalbox movedown">
+        <a href="#close" title="Close" class="close">X</a>
+        <h2>Fanta</h2>
+        <p>Agua carbonatada 
+        Azúcar  
+        Zumo de naranja 
+        Acidulantes 
+        Conservantes 
+        Colorantes</p>
+      </div>
     </div>
-    <div class="producto">
-        <button>
-            <img src="imagenes bebidas/pepsi.jpg" alt="gaseosa pepsi"><br>
-            <span href="bebidasindex/pepsi.html" class="arriba">
-                ver más...
-            </span>
-            
-        </button>
-        <p>2500$</p>
-        <form class="form-agregar" >
-            <input type="number" name="cantidad" min="0" value="0" class="input-cantidad" required>
-            <button type="submit">Agregar</button>
-        </form>
+  </div>
+
+  <div class="producto">
+    <a href="#modal-4">
+      <img src="imagenes bebidas/mirinda.jpg" alt="gaseosa mirinda"><br>
+      <span>ver más...</span>
+    </a>
+    <p>2500$</p>
+    <form class="form-agregar">
+      <input type="number" name="cantidad" min="0" value="0" class="input-cantidad" required>
+      <button type="submit">Agregar</button>
+    </form>
+    <div id="modal-4" class="modalmask">
+      <div class="modalbox movedown">
+        <a href="#close" title="Close" class="close">X</a>
+        <h2>Mirinda</h2>
+        <p>Ingredientes
+          Base líquida y carbonatación 
+          Sabor: Concentrado de naranja 
+          Edulcorantes sin calorías
+          Conservantes </p>
+      </div>
     </div>
-    <div class="producto">
-        <button>
-            <img src="imagenes bebidas/sevenup.jpg" alt="gaseosa 7up"><br>
-            <span href="bebidasindex/sevenup.html" class="arriba">
-                ver más...
-            </span>
-            
-        </button>
-        <p>2500$</p>
-        <form class="form-agregar" >
-            <input type="number" name="cantidad" min="0" value="0" class="input-cantidad" required>
-            <button type="submit">Agregar</button>
-        </form>
+  </div>
+
+  <div class="producto">
+    <a href="#modal-5">
+      <img src="imagenes bebidas/pepsi.jpg" alt="gaseosa pepsi"><br>
+      <span>ver más...</span>
+    </a>
+    <p>2500$</p>
+    <form class="form-agregar">
+      <input type="number" name="cantidad" min="0" value="0" class="input-cantidad" required>
+      <button type="submit">Agregar</button>
+    </form>
+    <div id="modal-5" class="modalmask">
+      <div class="modalbox movedown">
+        <a href="#close" title="Close" class="close">X</a>
+        <h2>Pepsi</h2>
+        <p>Ingredientes de la Pepsi original
+        Agua carbonatada
+        Azúcar (o jarabe de maíz con alto contenido de fructosa, dependiendo de la región)
+        Colorante (E-150d)
+        Acidulante (E-338)
+        Aromas (incluye cafeína)</p>
+      </div>
     </div>
-    <div class="producto">
-        <button>
-            <img src="imagenes bebidas/manaosuva.jpg" alt="manaos de uva"><br>
-            <span href="imagenes bebidas/manaosuva.jpg" class="arriba">
-                ver más... 
-            </span>
-            
-        </button>
-        <p>2500$</p>
-        <form class="form-agregar" >
-            <input type="number" name="cantidad" min="0" value="0" class="input-cantidad" required>
-            <button type="submit">Agregar</button>
-        </form>
+  </div>
+
+  
+  <div class="producto">
+    <a href="#modal-6">
+      <img src="imagenes bebidas/sevenup.jpg" alt="gaseosa 7up"><br>
+      <span>ver más...</span>
+    </a>
+    <p>2500$</p>
+    <form class="form-agregar">
+      <input type="number" name="cantidad" min="0" value="0" class="input-cantidad" required>
+      <button type="submit">Agregar</button>
+    </form>
+    <div id="modal-6" class="modalmask">
+      <div class="modalbox movedown">
+        <a href="#close" title="Close" class="close">X</a>
+        <h2>7UP</h2>
+        <p>Ingredientes 
+          agua carbonatada, azúcar (en la versión original)
+          aromas naturales de lima y limón
+          acidulantes como el ácido cítrico</p>
+      </div>
     </div>
-    <div class="producto">
-        <button>
-            <img src="imagenes bebidas/cepitafrutillamango.jpg" alt="cepita frutilla mango"><br>
-            <span href="bebidasindex/cepfr.html" class="arriba">
-                ver más... 
-            </span>
-            
-        </button>
-        <p>2500$</p>
-        <form class="form-agregar" >
-            <input type="number" name="cantidad" min="0" value="0" class="input-cantidad" required>
-            <button type="submit">Agregar</button>
-        </form>
+  </div>
+
+  
+  <div class="producto">
+    <a href="#modal-7">
+      <img src="imagenes bebidas/manaosuva.jpg" alt="manaos de uva"><br>
+      <span>ver más...</span>
+    </a>
+    <p>2500$</p>
+    <form class="form-agregar">
+      <input type="number" name="cantidad" min="0" value="0" class="input-cantidad" required>
+      <button type="submit">Agregar</button>
+    </form>
+    <div id="modal-7" class="modalmask">
+      <div class="modalbox movedown">
+        <a href="#close" title="Close" class="close">X</a>
+        <h2>Manaos Uva</h2>
+        <p>ingredientes agua carbonatada, jarabe de maíz de alta fructosa (JMAF), y una mezcla de aromatizantes, colorantes y aditivos</p>
+      </div>
     </div>
-    <div class="producto">
-        <button>
-            <img src="imagenes bebidas/cepita naranja.jpg" alt="cepita naranja"><br>
-            <span href="bebidasindex/cepnaranja.html" class="arriba">
-                ver más...
-            </span>
-            
-        </button>
-        <p>2500$</p>
-        <form class="form-agregar" >
-            <input type="number" name="cantidad" min="0" value="0" class="input-cantidad" required>
-            <button type="submit">Agregar</button>
-        </form>
+  </div>
+
+  
+  <div class="producto">
+    <a href="#modal-8">
+      <img src="imagenes bebidas/cepitafrutillamango.jpg" alt="cepita frutilla mango"><br>
+      <span>ver más...</span>
+    </a>
+    <p>2500$</p>
+    <form class="form-agregar">
+      <input type="number" name="cantidad" min="0" value="0" class="input-cantidad" required>
+      <button type="submit">Agregar</button>
+    </form>
+    <div id="modal-8" class="modalmask">
+      <div class="modalbox movedown">
+        <a href="#close" title="Close" class="close">X</a>
+        <h2>Cepita Frutilla-Mango</h2>
+        <p>ingredientes agua, jugo de fruta (como naranja, manzana o durazno) y/o pulpa de fruta, junto con vitaminas C y E, zinc y edulcorantes como sucralosa y acesulfame K</p>
+      </div>
     </div>
-    <div class="producto">
-        <button>
-            <img src="imagenes bebidas/cepitamultifruta.jpg" alt="cepita multifruta"><br>
-            <span href="bebidasindex/cepmulti.html" class="arriba">
-                ver más...
-            </span>
-            
-        </button>
-        <p>2500$</p>
-        <form class="form-agregar" >
-            <input type="number" name="cantidad" min="0" value="0" class="input-cantidad" required>
-            <button type="submit">Agregar</button>
-        </form>
+  </div>
+
+  
+  <div class="producto">
+    <a href="#modal-9">
+      <img src="imagenes bebidas/cepita naranja.jpg" alt="cepita naranja"><br>
+      <span>ver más...</span>
+    </a>
+    <p>2500$</p>
+    <form class="form-agregar">
+      <input type="number" name="cantidad" min="0" value="0" class="input-cantidad" required>
+      <button type="submit">Agregar</button>
+    </form>
+    <div id="modal-9" class="modalmask">
+      <div class="modalbox movedown">
+        <a href="#close" title="Close" class="close">X</a>
+        <h2>Cepita Naranja</h2>
+        <p>ingredientes agua, jugo de fruta (como naranja, manzana o durazno) y/o pulpa de fruta, junto con vitaminas C y E, zinc y edulcorantes como sucralosa y acesulfame K</p>
+      </div>
     </div>
-    <div class="producto">
-        <button>
-            <img src="imagenes bebidas/cepmanzanaroja.jpg" alt="cepita manzana"><br>
-            <span href="bebidasindex/cepdur.html" class="arriba">
-                ver más...  
-            </span>
-            
-        </button>
-        <p>2500$</p>
-        <form class="form-agregar" >
-            <input type="number" name="cantidad" min="0" value="0" class="input-cantidad" required>
-            <button type="submit">Agregar</button>
-        </form>
+  </div>
+
+
+  <div class="producto">
+    <a href="#modal-10">
+      <img src="imagenes bebidas/cepitamultifruta.jpg" alt="cepita multifruta"><br>
+      <span>ver más...</span>
+    </a>
+    <p>2500$</p>
+    <form class="form-agregar">
+      <input type="number" name="cantidad" min="0" value="0" class="input-cantidad" required>
+      <button type="submit">Agregar</button>
+    </form>
+    <div id="modal-10" class="modalmask">
+      <div class="modalbox movedown">
+        <a href="#close" title="Close" class="close">X</a>
+        <h2>Cepita Multifruta</h2>
+        <p>ingredientes agua, jugo de fruta (como naranja, manzana o durazno) y/o pulpa de fruta, junto con vitaminas C y E, zinc y edulcorantes como sucralosa y acesulfame K</p>
+      </div>
     </div>
-    </section>
+  </div>
+
+  
+  <div class="producto">
+    <a href="#modal-11">
+      <img src="imagenes bebidas/cepmanzanaroja.jpg" alt="cepita manzana roja"><br>
+      <span>ver más…</span>
+    </a>
+    <p>2500$</p>
+    <form class="form-agregar">
+      <input type="number" name="cantidad" min="0" value="0" class="input-cantidad" required>
+      <button type="submit">Agregar</button>
+    </form>
+    <div id="modal-11" class="modalmask">
+      <div class="modalbox movedown">
+        <a href="#close" title="Close" class="close">X</a>
+        <h2>Cepita Manzana Roja</h2>
+        <p>ingredientes agua, jugo de fruta (como naranja, manzana o durazno) y/o pulpa de fruta, junto con vitaminas C y E, zinc y edulcorantes como sucralosa y acesulfame K</p>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+    <script>
+      
+      document.querySelectorAll(".form-agregar").forEach(form => {
+        form.addEventListener("submit", function(event) {
+          event.preventDefault(); 
+          const input = this.querySelector(".input-cantidad");
+          const cantidad = parseInt(input.value, 10);
+          const limite = 10;
+
+          if (isNaN(cantidad) || cantidad < 0) {
+            alert("Por favor ingresá un número válido.");
+            return;
+          }
+
+          if (cantidad > limite) {
+            alert(`Solo puedes agregar hasta ${limite} bebidas por producto.`);
+            input.value = limite;
+            return;
+          }
+
+          alert("Producto agregado al carrito");
+          
+        });
+      });
+    </script>
+
 </body>
 </html>
