@@ -34,7 +34,6 @@ body{
         height: 60px;
     }
 }
-
 @layer principal{
     
   .contenido {
@@ -79,7 +78,7 @@ body{
     padding: 10px;
     color: #413930;
     border: 2px solid #887c6c;
-    background-color: #dbc6aa;
+    background-color: #e7f5c8;
     border-radius: 5px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.504);
     transition: transform 3.0s;
