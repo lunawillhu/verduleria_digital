@@ -35,7 +35,7 @@
                     <p>100$</p>
                     <form class="form-agregar" >
                         <input type="number" name="cantidad" min="0" value="0" class="input-cantidad" required>
-                        <button onclick="left()" type="submit">Agregar</button>
+                        <button onclick="left(); alert('Producto agregado al carrito');" type="button">Agregar</button>
                     </form>
                 </div>
                 <div class="producto">
@@ -45,7 +45,7 @@
                         <p>100$</p>
                         <form class="form-agregar" >
                             <input type="number" name="cantidad" min="0" value="0" class="input-cantidad" required>
-                            <button onclick="left()" type="submit">Agregar</button>
+                            <button onclick="left(); alert('Producto agregado al carrito');" type="button">Agregar</button>
                     </form>                
                 </div>
                 <div class="producto">
@@ -55,7 +55,7 @@
                         <p>100$</p>
                         <form class="form-agregar" >
                             <input type="number" name="cantidad" min="0" value="0" class="input-cantidad" required>
-                            <button onclick="left()" type="submit">Agregar</button>
+                            <button onclick="left(); alert('Producto agregado al carrito');" type="button">Agregar</button>
                     </form>
 
                 </div>
@@ -66,7 +66,7 @@
                         <p>100$</p>
                         <form class="form-agregar" >
                             <input type="number" name="cantidad" min="0" value="0" class="input-cantidad" required>
-                            <button  onclick="left()"type="submit">Agregar</button>
+                            <button  onclick="left(); alert('Producto agregado al carrito');"type="button">Agregar</button>
                         </form>
 
 
@@ -78,7 +78,7 @@
                     <p>100$</p>
                         <form class="form-agregar" >
                             <input type="number" name="cantidad" min="0" value="0" class="input-cantidad" required>
-                            <button onclick="left()" type="submit">Agregar</button>
+                            <button onclick="left(); alert('Producto agregado al carrito');" type="button">Agregar</button>
                     </form>
                 
                 </div>
@@ -89,7 +89,7 @@
                     <p>100$</p>
                         <form class="form-agregar" >
                             <input type="number" name="cantidad" min="0" value="0" class="input-cantidad" required>
-                            <button onclick="left()" type="submit">Agregar</button>
+                            <button onclick="left(); alert('Producto agregado al carrito');" type="button">Agregar</button>
                     </form>
                 
                 </div>
@@ -100,7 +100,7 @@
                         <p>100$</p>
                         <form class="form-agregar" >
                             <input type="number" name="cantidad" min="0" value="0" class="input-cantidad" required>
-                            <button onclick="left()" type="submit">Agregar</button>
+                            <button onclick="left(); alert('Producto agregado al carrito');" type="button">Agregar</button>
                     </form>
                 
                 </div>
@@ -111,7 +111,7 @@
                         <p>100$</p>
                         <form class="form-agregar" >
                             <input type="number" name="cantidad" min="0" value="0" class="input-cantidad" required>
-                            <button  onclick="left()"type="submit">Agregar</button>
+                            <button  onclick="left(); alert('Producto agregado al carrito');"type="button">Agregar</button>
                     </form>
                 
                 </div>
@@ -123,7 +123,7 @@
                         <p>100$</p>
                         <form class="form-agregar" >
                             <input type="number" name="cantidad" min="0" value="0" class="input-cantidad" required>
-                            <button onclick="left()" type="submit">Agregar</button>
+                            <button onclick="left(); alert('Producto agregado al carrito');" type="button">Agregar</button>
                     </form>
                 
                 </div>
@@ -134,7 +134,7 @@
                         <p>100$</p>
                         <form class="form-agregar" >
                             <input type="number" name="cantidad" min="0" value="0" class="input-cantidad" required>
-                            <button onclick="left()" type="submit">Agregar</button>
+                            <button onclick="left(); alert('Producto agregado al carrito');" type="button">Agregar</button>
                     </form>
                     
                 </div>
@@ -145,7 +145,7 @@
                         <p>100$</p>
                         <form class="form-agregar" >
                             <input type="number" name="cantidad" min="0" value="0" class="input-cantidad" required>
-                            <button onclick="left()" type="submit">Agregar</button>
+                            <button onclick="left(); alert('Producto agregado al carrito');" type="button">Agregar</button>
                     </form>
                     
                 </div>
@@ -162,9 +162,9 @@
 
     </div>
     <script>
-        onclick = "left()";{
-            alert("Producto agregado al carrito");
+        function left() {
+            console.log("Ejecutando función left()");
         }
-    </script>
+</script>
 </body>
 </html>
