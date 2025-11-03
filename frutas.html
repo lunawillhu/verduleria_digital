@@ -240,6 +240,28 @@
 
     </div>
     <script>
+      document.querySelectorAll(".form-agregar").forEach(form => {
+        form.addEventListener("submit", function(event) {
+          event.preventDefault(); 
+          const input = this.querySelector(".input-cantidad");
+          const cantidad = parseInt(input.value, 10);
+          const limite = 10;
+
+          if (isNaN(cantidad) || cantidad < 0) {
+            alert("Por favor ingresá un número válido.");
+            return;
+          }
+
+          if (cantidad > limite) {
+            alert(Solo puedes agregar hasta ${limite} bebidas por producto.);
+            input.value = limite;
+            return;
+          }
+
+          alert("Producto agregado al carrito");
+          
+        });
+      });
         onclick = "left()";{
             alert("Producto agregado al carrito");
         }
@@ -247,4 +269,3 @@
 </body>
 </html>
 
- 
