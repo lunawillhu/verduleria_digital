@@ -1,46 +1,174 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
-    <link rel="stylesheet" href="contacto/stylecontacto.css">
+    <title>Contacto El Tomatito Feliz</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            background-color: #fffaf4;
+            color: #333;
+        }
+
+        header {
+            background-color: #164c22;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        section {
+            max-width: 600px;
+            background: #fff;
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #164c22;
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        input, textarea {
+            padding: 0.8rem;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-size: 1rem;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        button {
+            background-color: #276c36;
+            color: white;
+            border: none;
+            padding: 0.8rem;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #21867a;
+        }
+
+        .equipo {
+            margin-top: 2rem;
+            text-align: center;
+        }
+
+        .integrantes {
+            display: flex;
+            justify-content: center;
+            gap: 1.2rem;
+            flex-wrap: wrap;
+        }
+
+        .integrante {
+            background-color: #d5efd4;
+            padding: 1rem;
+            border-radius: 12px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+            width: 120px;
+        }
+
+        .integrante h3 {
+            color: #1e672e;
+            margin: 0;
+            font-size: 1.1rem;
+        }
+
+        .integrante a{
+            color: #21867a;
+            font-style: italic;
+            font-size: small;
+        }
+
+        footer {
+            margin-top: 2rem;
+            text-align: center;
+            padding: 1rem;
+            background-color: #164c22;
+            color: white;
+        }
+    </style>
 </head>
 <body>
-    <div class="contenido">
-            <div class="contacto">
-            Luna Willhuber <br>
-            luwillhuber@gmail.com <br>
-            Rama: <a href="https://github.com/lunawillhu/verduleria_digital/tree/master">master</a> <br>
-            <ul>
-                <li><a href="index.html">Pagina principal</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </div>
-        <div class="contacto">
-            Ainara Rosales <br>
-            rosalesainaraa@gmail.com <br>
-            Rama: <a href="https://github.com/lunawillhu/verduleria_digital/tree/main">main</a> <br>
-            <ul>
-                <li><a href="indexbebidas.html">Bebidas</a></li>
-            </ul>
-        </div>
-        <div class="contacto">
-            Constanza Strumia <br>
-            strumiaconi@gmail.com <br>
-            Rama: <a href="https://github.com/lunawillhu/verduleria_digital/tree/main2">main2</a> <br>
-            <ul>
-                <li><a href="verdura.html">Verduras</a></li>
-            </ul>
-        </div>
-        <div class="contacto">
-            Mayra Fritz <br>
-            mairafritz483@gmail.com <br>
-            Rama: <a href="https://github.com/lunawillhu/verduleria_digital/tree/main3">main3</a> <br>
-            <ul>
-                <li><a href="frutas.html">Frutas</a></li>
-            </ul>
-        </div>
-    </div>
+    <header>
+        <h1>🍅 El Tomatito Feliz 🍅</h1>
+        <p>Verdulería de confianza</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Contactanos</h2>
+            <form action="#" method="post">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required>
+
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" placeholder="Mensaje..." required></textarea>
+
+                <button type="submit">Enviar mensaje</button>
+            </form>
+
+            <div class="equipo">
+                <h2>Nuestro equipo 🍅</h2>
+                <div class="integrantes">
+                    <div class="integrante">
+                        <h3>Luna Willhuber</h3>
+                        <a href="index.html">Principal</a>
+                        <a href="contacto.html">Contacto</a>
+                    </div>
+                    <div class="integrante">
+                        <h3>Ainara Rosales</h3>
+                        <a href="indexbebidas.html">Bebidas</a>
+                    </div>
+                    <div class="integrante">
+                        <h3>Constanza Strumia</h3>
+                        <a href="verdura.html">Verduras</a>
+                    </div>
+                    <div class="integrante">
+                        <h3>Mayra Fritz</h3>
+                        <a href="frutas.html">Frutas</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 El Tomatito Feliz — Derechos reservados</p>
+    </footer>
 </body>
 </html>
